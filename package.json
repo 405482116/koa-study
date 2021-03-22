@@ -1,0 +1,31 @@
+{
+  "name": "koa-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "module": "main.js",
+  "scripts": {
+    "start": "node -r esm app.js",
+    "test": "ava -v ./test/index.js"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "supertest": "^6.1.3"
+  }
+}
